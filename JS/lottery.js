@@ -49,7 +49,7 @@ var flag=0;
 			pics[j%pics.length].className='active';
 			j=Math.floor(Math.random()*pics.length);
 			
-		},1000);
+		},100);
 		}
 	
 	}
