@@ -38,8 +38,8 @@ var flag=0;
 		var stop1=document.getElementById('stop');
 		clearInterval(timer);
 		start1.style.background='#999';
-		var j=0;
-		var num=Math.floor(Math.random()*pics.length);
+		var j=Math.floor(Math.random()*pics.length);
+		var num=Math.floor(Math.random()*pics.length)+20;
 		if (j<num){
 		timer=setInterval(function(){
 			for (var i=0;i<pics.length;i++)
@@ -47,9 +47,9 @@ var flag=0;
 				pics[i].className='';
 			}
 			pics[j%pics.length].className='active';
-			j++;
+			j=Math.floor(Math.random()*pics.length);
 			
-		},130);
+		},100);
 		}
 	
 	}
